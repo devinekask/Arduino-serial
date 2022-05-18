@@ -5,13 +5,26 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Vite App</title>
+	<title>Arduino Serial send-receive</title>
 </head>
 
 <body>
 	<div class="notsupported">Sorry, this browser doesn't support Web Serial</div>
 	<button class="connect">Connect</button>
-	<div id="app"></div>
+
+	<article>
+		<h2>Send</h2>
+		<form class="form">
+			<input type="text" id="message" name="message" placeholder="type something" />
+			<input type="submit" value="Send" />
+		</form>
+	</article>
+
+	<article>
+		<h2>Received</h2>
+		<textarea class="received" readonly rows="10" cols="30"></textarea>
+	</article>
+
 	<script type="module" src="/main.js"></script>
 </body>
 

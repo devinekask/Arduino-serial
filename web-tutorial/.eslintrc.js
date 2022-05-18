@@ -1,6 +1,7 @@
-const export = {
+module.exports = {
 	"env": {
 		"browser": true,
+		"node": true,
 		"es2022": true
 	},
 	"extends": "eslint:recommended",
@@ -11,5 +12,3 @@ const export = {
 	"rules": {
 	}
 }
-
-module.exports = export ;
