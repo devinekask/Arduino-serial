@@ -1,0 +1,24 @@
+body {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.notsupported {
+	font-size: 1.5em;
+	background-color: hsl(0, 63%, 86%);
+	color: hsl(0, 95%, 50%);
+	padding: .2em;
+	text-align: center;
+	position: sticky;
+}
+
+.hidden {
+	display: none;
+}
