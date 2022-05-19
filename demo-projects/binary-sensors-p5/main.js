@@ -1,6 +1,6 @@
 import './style.css'
 
-import { SerialBinary } from "../lib/index.js";
+import { SerialBinary } from "../../lib/index.js";
 import { sketch } from 'p5js-wrapper';
 
 let serial;

@@ -1,4 +1,4 @@
-import { SerialText } from '../lib';
+import { SerialText } from '../../lib/index.js';
 import './style.css'
 
 let serial;
