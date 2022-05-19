@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "p5js-wrapper": "^1.2.3"
   }
 }
