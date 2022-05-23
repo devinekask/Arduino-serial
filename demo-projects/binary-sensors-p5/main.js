@@ -11,12 +11,11 @@ const init = async () => {
   serial = new SerialBinary({ log: false });
 
   serial.onMessage(handleIncomingMessage);
+  await connect();
 
   document.querySelector("#connect").addEventListener('click', async (e) => {
     if (!serial.port) {
-      await serial.connect();
-      serial.write(new Uint8Array([65]));
-      e.target.innerText = "Disconnect";
+      await connect();
     } else {
       await serial.disconnect();
       e.target.innerText = "Connect";
@@ -38,6 +37,14 @@ const init = async () => {
     pop();
   };
 
+}
+
+const connect = async () => {
+  const connected = await serial.connect();
+  if (connect) {
+    serial.write(new Uint8Array([65]));
+    document.querySelector("#connect").innerText = "Disconnect";
+  }
 }
 
 
